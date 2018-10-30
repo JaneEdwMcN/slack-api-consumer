@@ -9,10 +9,11 @@
   </head>
 
   <body>
+
     <% if flash[:status] %>
-     <section class="row status <%= flash[:status] %>">
+     <section class="alert alert-<%= flash[:status] %>">
        <h3>
-         <%= flash[:message] %>
+         <%= flash[:result_text] %>
        </h3>
      </section>
     <% end %>
